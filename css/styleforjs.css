@@ -1,0 +1,217 @@
+/*ZMIENNE CSS */
+:root {
+    --background-color: #6600cc;
+}/*ZMIENNE CSS */
+
+/*ANIMACJE DLA ELEMENTÓW JS*/
+@keyframes shadow-pulse {
+    0%, 100% {
+        box-shadow: 0 10px 15px rgba(255, 0, 0, 0.9);
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        box-shadow: -10px 0 15px rgba(255, 0, 0, 0.9);
+        transform: scale(1.05) rotate(1deg);
+    }
+    50% {
+        box-shadow: 0 -10px 15px rgba(255, 0, 0, 0.9);
+        transform: scale(1) rotate(0deg);
+    }
+    75% {
+        box-shadow: 10px 0 15px rgba(255, 0, 0, 0.9);
+        transform: scale(1.05) rotate(-1deg);
+    }
+}
+@keyframes uczeczka {
+    from {
+        transform: translateX(-500px) translateY(-500px);
+    }
+    to {
+        transform: translateX(0) translateY(0);
+    }
+}
+@keyframes radius {
+    0%, 100% {
+        border-radius: 0px 0px 0px 0px;
+    }
+    10% {
+        border-radius: 0px 0px 0px 20px;
+    }
+    20% {border-radius: 0px 0px 20px 0px;}
+    40% {border-radius: 0 20px 0 0;}
+    50% {border-radius: 20px 0 0 0;}
+
+    60% {border-radius: 20px 20px 0 0;}
+    70% {border-radius: 20px 20px 0 20px;}
+    80% {border-radius: 20px 20px 20px 20px;}
+}/*ANIMACJE DLA ELEMENTÓW JS*/
+
+ /* USTAWIENIA DO PRZEWIJANIA DLA JS*/
+.math-buttons::-webkit-scrollbar, .funkcji-buttons::-webkit-scrollbar {
+    height: 8px;
+    background-color: #000;
+}
+.math-buttons::-webkit-scrollbar-thumb, .funkcji-buttons::-webkit-scrollbar-thumb {
+    background-color: #6600cc;
+}
+.math-buttons::-webkit-scrollbar-thumb:hover, .funkcji-buttons::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}  /* USTAWIENIA DO PRZEWIJANIA DLA JS*/
+
+
+.wroc-button {
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin: 30px;
+    animation: uczeczka 0.2s ease-out;
+}
+.opis p.opis {
+    color: whitesmoke;
+}
+.wroc-button button{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #8000ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 5px black;
+    transition:
+        transform 0.5s ease, 
+        box-shadow 0.5s ease, 
+        letter-spacing 0.5s ease;
+}
+.wroc-button button:hover{
+    animation: radius 4s infinite;
+    transform: scale(1.03);
+    box-shadow: 0 0px 0px 3px rgba(255, 0, 0, 0.3);
+    letter-spacing: 5px;
+}
+.math-buttons, .funkcji-buttons, .chem-buttons, .pols-buttons {
+    text-align: center;
+    margin-top: 10px;
+    overflow-x: auto;
+    display: flex;
+    scroll-snap-align: x mandatory;
+    margin: auto;
+    max-width: 450px;
+    width: 100%;
+}
+
+.math-button, .funkcji-button, .chem-button, .wegl-button, .nas-button, .pols-button, .prz_w-button, .gpostacie {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #6600cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Mono';
+    text-shadow: 5px 5px 5px black;
+    transition: transform 0.5s ease ;
+}
+.math-button:hover, .funkcji-button:hover, .chem-button:hover, .wegl-button:hover, .nas-button:hover, .pols-button:hover, .prz_w-button:hover, .gpostacie:hover {
+    transform: scale(1.1);
+    border-radius: 0%;
+    animation: shadow-pulse 1s infinite;
+}
+.note-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #AAA;
+    font-family: 'Roboto Mono';
+    animation: slideIn 0.4s ease-out;
+}
+
+.note-title {
+    color: #fff;
+    font-family: 'Bebas Neue';
+    text-align: center;
+}
+
+.back-to-math, .back-to-chem, .back-to-pols{
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    background-color: #6600cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+img.one {
+    float: right;
+}
+.mtest {
+    display: flex;
+    padding: 40px;
+}
+.mtest p.wrong, .mtest p.good {
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: transform 1s ease;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.mtest p.wrong:hover{
+    border: 2px solid crimson;
+    background-color: crimson;
+    transform: scale(1.2);
+    box-shadow: 0 10px 10px rgb(146, 3, 31);
+    color: white;
+    padding: 10px 20px;
+}
+.mtest p.good:hover {
+    color: #000;
+    border: 2px solid rgb(0, 255, 0);
+    background-color: rgb(0, 255, 0);
+    transform: scale(1.2);
+    box-shadow: 0 10px 10px rgb(1, 153, 1);
+    padding: 10px 20px;
+}
+.wyjasnienie img {
+    border: 1px solid;
+}
+.wyjasnienie{
+    color: #000;
+    background-color: #000;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.wyjasnienie:hover {
+    opacity: 1;
+    color:#AAA;
+    transition: opacity 1s ease;
+}
+.dzielenie {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+.dzielenie span:first-child {
+    border-bottom: 2px solid wheat;
+}
+span.nawias-span {
+    border-left: 1px solid wheat;
+    border-right: 1px solid wheat;
+    padding: 10px 8px;
+    border-radius: 30px;
+}
+.math-subject-button, .chem-subject-button, .pols-subject-button {
+    transition: text-decoration 0.3 ease;
+}
+.math-subject-button:hover, .chem-subject-button:hover, .pols-subject-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+li {
+    padding-top: 10px;
+}
