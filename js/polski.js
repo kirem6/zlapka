@@ -15,9 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 <button class="pols-button prz_w-button">
                     Przedwiośnie - Stefan Żeromski
                 </button>
-                <button class="pols-buttom zbr_i_k-button">
-                    Zbrodnia i Kara - Fiodor Dostojewski
-                </button>
             </div>
         `;
 
@@ -47,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         <li>Ojciec Cezarego, mąż Jadwigi, który jest dobrze zarabiającym urzędnikiem rosyjskim.</li>
                         <li>Był jednocześnie polskim patriotą i potomkiem powstańca listopadowego.</li>
                         <li>Został wcielony do wojska rosyjskiego i bierze udział w I wojnie.</li>
-                        <li></li>
                     </ul>
                 `)
             })

@@ -102,7 +102,7 @@
     width: 100%;
 }
 
-.math-button, .funkcji-button, .chem-button, .wegl-button, .nas-button, .pols-button, .prz_w-button, .gpostacie {
+.math-button, .funkcji-button, .chem-button, .wegl-button, .nas-button, .pols-button, .prz_w-button, .gpostacie, .innep {
     margin: 10px;
     padding: 10px 20px;
     background-color: #6600cc;
@@ -114,7 +114,7 @@
     text-shadow: 5px 5px 5px black;
     transition: transform 0.5s ease ;
 }
-.math-button:hover, .funkcji-button:hover, .chem-button:hover, .wegl-button:hover, .nas-button:hover, .pols-button:hover, .prz_w-button:hover, .gpostacie:hover {
+.innep:hover, .math-button:hover, .funkcji-button:hover, .chem-button:hover, .wegl-button:hover, .nas-button:hover, .pols-button:hover, .prz_w-button:hover, .gpostacie:hover {
     transform: scale(1.1);
     border-radius: 0%;
     animation: shadow-pulse 1s infinite;
